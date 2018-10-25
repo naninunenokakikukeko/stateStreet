@@ -30,7 +30,8 @@ const Transactions = ({ dataContent, onClick }) => (
 )
 
 Transactions.propTypes = {
-    dataContent: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.shape(TransactionShape).isRequired).isRequired).isRequired,
+    //dataContent: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.shape(TransactionShape).isRequired).isRequired).isRequired,
+    dataContent:  PropTypes.arrayOf(PropTypes.shape(TransactionShape)),
     onClick: PropTypes.func.isRequired
 }
 

@@ -46,7 +46,8 @@ export const TransactionShape = {
 };
 
 Transaction.propTypes = {
-    dataContent: PropTypes.objectOf(PropTypes.shape(TransactionShape).isRequired).isRequired,
+    //dataContent: PropTypes.objectOf(PropTypes.shape(TransactionShape).isRequired).isRequired,
+    dataContent: PropTypes.shape(TransactionShape),
     onClick: PropTypes.func.isRequired,
     isTableRow: PropTypes.bool
 }

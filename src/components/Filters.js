@@ -63,7 +63,8 @@ const Filters = ({ dataContent, onChangeAccountFilter, onChangeTransactionFilter
 )
 
 Filters.propTypes = {
-    dataContent: PropTypes.objectOf(PropTypes.shape(FiltersShape).isRequired).isRequired,
+    //dataContent: PropTypes.objectOf(PropTypes.shape(FiltersShape).isRequired).isRequired,
+    dataContent: PropTypes.shape(FiltersShape),
     onChangeAccountFilter: PropTypes.func.isRequired,
     onChangeTransactionFilter: PropTypes.func.isRequired
 }

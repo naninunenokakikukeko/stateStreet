@@ -2,6 +2,11 @@
   margin: 10px;
 }
 
+.App {
+  width: 1100px;
+  overflow-x: auto;
+}
+
 .filters {
   width: 260px;
   display: inline-block;
