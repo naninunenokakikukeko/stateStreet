@@ -13,10 +13,6 @@ const mapStateToProps = (state, ownProps) => {
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-    onClick: (event) => {
-        //event.preventDefault();
-        return;
-    }
 })
 
 export default withRouter(connect(

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import './index.css';
 import App from './App';
@@ -21,10 +21,10 @@ const defaultState = {
 ReactDOM.render(
     <Provider store={configureStore(defaultState)}>
         <BrowserRouter>
-            <div>
+            <Switch>
                 <Route exact path="/" component={App} />
                 <Route exact path="/transactions/:account" component={TransactionView} />
-            </div>
+            </Switch>
         </BrowserRouter>
     </Provider>,
     document.getElementById('root')
