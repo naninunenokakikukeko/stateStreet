@@ -57,15 +57,15 @@
   padding: 0;
   margin: 0
 }
-.transaction dt {
-  display: inline-block;
-  width: 70%;
-  padding: 0;
-  margin: 0
-}
 .transaction dd {
   display: inline-block;
   width: 30%;
+  padding: 0;
+  margin: 0
+}
+.transaction dt {
+  display: inline-block;
+  width: 70%;
   padding: 0;
   margin: 0
 }
